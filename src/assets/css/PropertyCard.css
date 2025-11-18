@@ -33,7 +33,7 @@
   padding: 16px 20px 20px 20px;
 }
 
-/* Header Section - Name, Location, Rating */
+/* FIX: Header Section - Everything aligned left */
 .property-header {
   display: flex;
   justify-content: space-between;
@@ -43,22 +43,25 @@
 
 .property-info {
   flex: 1;
+  text-align: left; /* Ensure left alignment */
 }
 
 .property-name {
   font-size: 1.1rem;
-  font-weight: 700; /* Poppins Bold */
+  font-weight: 700;
   margin: 0 0 4px 0;
   color: #1a1a1a;
   line-height: 1.3;
+  text-align: left; /* Force left alignment */
 }
 
 .property-location {
   font-size: 0.9rem;
-  font-weight: 400; /* Poppins Regular */
+  font-weight: 400;
   color: #666;
   margin: 0;
   line-height: 1.2;
+  text-align: left; /* Force left alignment */
 }
 
 .property-rating {
@@ -70,7 +73,7 @@
 
 .rating-number {
   font-size: 0.9rem;
-  font-weight: 600; /* Poppins Semi-Bold */
+  font-weight: 600;
   color: #1a1a1a;
 }
 
@@ -78,32 +81,34 @@
   font-size: 0.8rem;
 }
 
-/* Pricing Section */
+/* FIX: Pricing Section - Left aligned */
 .property-pricing {
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid #f0f0f0;
+  text-align: left; /* Force left alignment */
 }
 
 .property-price {
   font-size: 1.3rem;
-  font-weight: 700; /* Poppins Bold */
-  color: #2c5530;
+  font-weight: 700;
+  color: #373737;
 }
 
 .property-period {
   font-size: 0.9rem;
-  font-weight: 400; /* Poppins Regular */
+  font-weight: 400;
   color: #888;
   margin-left: 4px;
 }
 
-/* Features Section */
+/* FIX: Features Section - Left aligned but spaced */
 .property-features {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  text-align: left; /* Force left alignment */
 }
 
 .feature-item {
@@ -119,7 +124,7 @@
 
 .feature-text {
   font-size: 0.85rem;
-  font-weight: 500; /* Poppins Medium */
+  font-weight: 500;
   color: #555;
   white-space: nowrap;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHome, FaBed, FaBath } from 'react-icons/fa';
-import './PropertyCard.css';
+import '../assets/css/PropertyCard.css';
 
 const PropertyCard = ({ property }) => {
   const {
@@ -33,7 +33,7 @@ const PropertyCard = ({ property }) => {
       {/* Property Image */}
       <div className="property-image">
         <img 
-          src={imageUrl || '/default-property.jpg'} 
+          src={property.image || imageUrl} 
           alt={name}
           onError={(e) => {
             e.target.src = '/default-property.jpg';
@@ -58,7 +58,7 @@ const PropertyCard = ({ property }) => {
         {/* Price and Period */}
         <div className="property-pricing">
           <span className="property-price">{formatPrice(price)}</span>
-          <span className="property-period">/{getPeriodText()}</span>
+          <span className="property-period">{getPeriodText()}</span>
         </div>
 
         {/* Property Features */}
