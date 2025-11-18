@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.property-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 320px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.property-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.property-details {
+  padding: 16px 20px 20px 20px;
+}
+
+/* FIX: Header Section - Everything aligned left */
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.property-info {
+  flex: 1;
+  text-align: left; /* Ensure left alignment */
+}
+
+.property-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #1a1a1a;
+  line-height: 1.3;
+  text-align: left; /* Force left alignment */
+}
+
+.property-location {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  line-height: 1.2;
+  text-align: left; /* Force left alignment */
+}
+
+.property-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 12px;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.rating-star {
+  font-size: 0.8rem;
+}
+
+/* FIX: Pricing Section - Left aligned */
+.property-pricing {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: left; /* Force left alignment */
+}
+
+.property-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #373737;
+}
+
+.property-period {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #888;
+  margin-left: 4px;
+}
+
+/* FIX: Features Section - Left aligned but spaced */
+.property-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left; /* Force left alignment */
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.feature-icon {
+  color: #4a90e2;
+  font-size: 0.9rem;
+}
+
+.feature-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .property-card {
+    max-width: 100%;
+  }
+  
+  .property-features {
+    gap: 8px;
+  }
+  
+  .feature-text {
+    font-size: 0.8rem;
+  }
+}
