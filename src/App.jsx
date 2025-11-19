@@ -10,13 +10,12 @@ import Featured from './pages/Featured.jsx';
 function App() {
   return (
     <>
-{/* <Router>
-    <Homesearch/>
+    
      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/featured-properties" element={<Featured />} />
       </Routes>
-</Router> */}
+
     </>
   )
 
