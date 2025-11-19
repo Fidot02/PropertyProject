@@ -1,0 +1,61 @@
+.search-container {
+width: 100%;
+height: 100vh;
+background-image: url('https://images.nigeriapropertycentre.com/properties/images/thumbs/3206891/0691b22c601a95-newly-renovated-4-bedroom-terrace-with-bq-for-sale-ikate-lekki-lagos.jpg');
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* Search box */
+.search-box {
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(6px);
+padding: 28px;
+
+width: 90%;
+max-width: 520px;
+border-radius: 18px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.input-field {
+width: 94%;
+padding:12px 14px;
+border: 1px solid #ccc;
+border-radius: 10px;
+margin-bottom: 16px;
+font-size: 16px;
+}
+
+
+.price-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 95%;
+gap:52px;
+margin-inline-start: 5px;
+margin-inline-end: 5px;
+}
+
+
+.search-btn {
+width: 100%;
+padding: 14px;
+background-color: #2563eb;
+color: #fff;
+border: none;
+border-radius: 10px;
+font-size: 18px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+
+.search-btn:hover {
+background-color: #1e4fc7;
+}
